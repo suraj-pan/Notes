@@ -1,6 +1,7 @@
 {
-  "name": "redux-movie-app",
+  
   "version": "0.1.0",
+  "name":"http://suraj-pan.github.io/Todo-list.git",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -27,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +44,9 @@
       "not dead",
       "not op_mini all"
     ],
+    "devDependencies":{
+      "gh-pages": "^3.1.0"
+    },
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
